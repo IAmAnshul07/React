@@ -1,10 +1,7 @@
 import React from 'react';
-const Hello = () => {
-    // return (
-    //     <div>
-    //         <h2>This is a JSX heading</h2>
-    //     </div>
-    // )
-    return React.createElement('div',null,React.createElement('h1',null,"This is a JSX heading"),);
+const Hello = (props) => {
+    console.log(props)
+return <h1>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiii {props.name} {props.hero}</h1>
+    // return React.createElement('div',null,React.createElement('h1',null,"This is a JSX heading"),);
 }
 export default Hello
